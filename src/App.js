@@ -1,6 +1,6 @@
 import React from "react";
 import GlobalStyle from "./globalStyles";
-import { Navbar, Home } from "./Containers";
+import { Navbar, Home, Footer } from "./Containers";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const App = () => {
@@ -11,6 +11,7 @@ const App = () => {
       <Switch>
         <Route path="/" exact component={Home} />
       </Switch>
+      <Footer />
     </Router>
   );
 };
