@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import { BannerContainer, DefaultButton } from "../../globalStyles";
-import { nearWhite, lightGray, beige, lightBrown, gray } from "../../Colors";
+import { nearWhite, gray } from "../../Colors";
 import { Link } from "react-router-dom";
 
 export const TodayPostContainer = styled(BannerContainer)``;
 
+// Banner section
 export const Date = styled.p`
   margin: 1rem 0;
 
@@ -75,6 +76,7 @@ export const PrevArrowContainer = styled(ArrowContainer)``;
 
 export const NextArrowContainer = styled(ArrowContainer)``;
 
+// Create section
 export const CreateButtonArea = styled.section`
   width: 80%;
 
