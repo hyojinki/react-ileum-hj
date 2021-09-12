@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { nearWhite, lightGray, beige, lightBrown } from "../../Colors";
 
 // Container
 export const NavContainer = styled.nav`
@@ -10,7 +12,7 @@ export const NavContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
 
-  background-color: #fffcf8;
+  background-color: ${nearWhite};
 `;
 
 // Logo
@@ -41,7 +43,7 @@ export const SearchBar = styled.input`
 
   font-size: 0.7rem;
 
-  border: solid 1px #d1cfcb;
+  border: solid 1px ${lightGray};
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 
@@ -61,10 +63,10 @@ export const SearchButton = styled.button`
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 
-  background-color: #ccc0a3;
+  background-color: ${beige};
 
   & i {
-    color: #fffcf8;
+    color: ${nearWhite};
   }
 `;
 
@@ -80,9 +82,8 @@ export const NavLinkContainer = styled.section`
   }
 `;
 
-export const NavLink = styled.a`
+export const NavLink = styled(Link)`
   cursor: pointer;
-  font-size: 0.9rem;
 
   &:hover {
     translate: scale(1.05);
@@ -93,11 +94,11 @@ export const NavLink = styled.a`
 export const RightNavLinksWrapper = styled.div`
   & * {
     margin: 0 1rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 `;
 
 export const GreetMessage = styled.p`
   font-size: 1.2rem;
-  color: #998f76;
+  color: ${lightBrown};
 `;

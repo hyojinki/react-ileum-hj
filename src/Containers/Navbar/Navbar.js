@@ -16,7 +16,7 @@ import {
 
 const Navbar = () => {
   return (
-    <div>
+    <>
       <NavContainer>
         <LogoContainer>
           <Logo src={LogoImg} onClick={() => {}} />
@@ -29,16 +29,16 @@ const Navbar = () => {
           </SearchButton>
         </SearchBarContainer>
         <NavLinkContainer>
-          <NavLink>사용 안내</NavLink>
+          <NavLink to="/">사용 안내</NavLink>
           <GreetMessage>어서오세요 :)</GreetMessage>
           <RightNavLinksWrapper>
-            <NavLink>내 페이지</NavLink>
-            <NavLink>로그아웃</NavLink>
-            <NavLink>피드백 남기기</NavLink>
+            <NavLink to="/">내 페이지</NavLink>
+            <NavLink to="/">로그아웃</NavLink>
+            <NavLink to="/">피드백 남기기</NavLink>
           </RightNavLinksWrapper>
         </NavLinkContainer>
       </NavContainer>
-    </div>
+    </>
   );
 };
 
