@@ -34,7 +34,7 @@ const Home = () => {
         <TodayMessage>누군가의 오늘 하루, 그리고 음악.</TodayMessage>
         <PostContainer>
           <PrevArrowContainer to="/">
-            <i class="fas fa-chevron-left"></i>
+            <i className="fas fa-chevron-left"></i>
           </PrevArrowContainer>
           <MusicCard />
           <ContentWrapper>
@@ -45,7 +45,7 @@ const Home = () => {
             <ContentSummary>{Content.Summary}</ContentSummary>
           </ContentWrapper>
           <NextArrowContainer to="/">
-            <i class="fas fa-chevron-right"></i>
+            <i className="fas fa-chevron-right"></i>
           </NextArrowContainer>
         </PostContainer>
       </TodayPostContainer>

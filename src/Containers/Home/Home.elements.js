@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { BannerContainer, DefaultButton } from "../../globalStyles";
-import { nearWhite, gray } from "../../Colors";
+import { nearWhite } from "../../Colors";
 import { Link } from "react-router-dom";
 
 export const TodayPostContainer = styled(BannerContainer)``;
@@ -12,7 +12,7 @@ export const Date = styled.p`
   font-size: 1.3rem;
   font-weight: 300;
 
-  color: ${gray};
+  color: ${nearWhite};
   opacity: 80%;
 `;
 
